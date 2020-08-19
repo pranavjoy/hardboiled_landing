@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>HardBoiled : Because everyone hates Comic Sans</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/scroll.css') }}">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+</head>
+<body>
+<div class="article-container">
+    <header class="header">
+
+        <h1 class="heading rellax-non-centered" data-rellax-speed="-5">HARDBOILED</h1>
+    </header>
+    <article class="content">
+
+        <center><p>In a world, divided by fear, where stories have been written the same way for hundreds, if not
+            thousands of years, the art form has lost interactivity and the medium can no longer engage.
+            But we can do better. A lot better. So let me take you to the year <b>1983.</b></p></center>
+
+        <div class="floating-rocks front-one rellax" data-rellax-speed="8">
+            <img src="../static/images/boiledEgg3.svg">
+        </div>
+
+        <p>"10, 9, ignition sequence start, 6, 5, 4, 3, 2, 1, zero. All engines running. Liftoff! We have a
+            liftoff!"</p>
+
+        <div class="floating-rocks back-one rellax" data-rellax-speed="-2">
+            <img src={{ url_for('static', filename='images/boiledEgg.svg') }}>
+        </div>
+
+        <p align="right">"Houston, InSight here. The Eagle is in the air. Turning off ignition and hopping on to the
+            slingshot trajectory."</p>
+
+        <div class="floating-rocks front-two rellax" data-rellax-speed="3">
+            <img opacity=0.5 src="../static/images/boiledEgg3.svg">
+        </div>
+
+        <p>"Affirmative InSight. Proceed as planned."</p>
+
+        <div class="floating-rocks back-two rellax" data-rellax-speed="-3">
+            <img src="../static/images/boiledEgg.svg">
+        </div>
+
+        <p align="right">"This is the LM pilot. Ignition sequence complete. Switching to controlled burn and initiating
+            pitch maneuver, in 3..2.."</p>
+
+        <div class="floating-rocks planet-earth rellax" data-rellax-speed="-4" data-rellax-percentage="0.5">
+            <img src="../static/images/broken.jpeg" width="250" height="250">
+        </div>
+
+        <p>"InSight, this is Houston. Do you copy? I repeat.. Do you copy?" (Off-mic : Oh shit, I think we lost
+            them)</p>
+        <center><h3 data-rellax-speed="-2">Want to know what happens next? <br><br> Leave us your details, and we'll get
+            back to you as soon as it's out</h3></center>
+        <br><br>
+
+
+        <center><img style="width: 70%" src="../static/images/google.png" alt="Just ask Alexa"><img></center>
+    </article>
+
+    <footer>
+        <h1 class="heading rellax" data-rellax-speed="-2">HARDBOILED</h1>
+
+    </footer>
+
+</div>
+
+<script src="{{ url_for('static', filename='javascripts/rellax.min.js') }}.."></script>
+
+<script>
+    var rellax = new Rellax('.rellax', {
+        center: true
+    });
+    var rellaxNonCentered = new Rellax('.rellax-non-centered', {
+        center: false
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+</body>
+</html>
